@@ -8,7 +8,6 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     width: 100vh;
-    height: 100vh;
   }
 `;
 

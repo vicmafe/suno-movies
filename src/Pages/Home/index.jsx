@@ -1,9 +1,13 @@
 import React from 'react';
+import Navbar from '../../Components/Navbar';
+import * as S from './style';
 
 const Home = () => {
   console.log('passou aqui')
   return (
-    <h1>Hello World!</h1>
+    <S.Container>
+      <Navbar />
+    </S.Container>
   )
 };
 

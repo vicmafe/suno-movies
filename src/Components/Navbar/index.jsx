@@ -12,6 +12,7 @@ const Navbar = () => {
       />
       <S.Icon
         src={ IconSearch }
+        alt=" lupa icone"
       />
     </S.Container>
   )

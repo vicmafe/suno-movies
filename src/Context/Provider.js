@@ -4,24 +4,27 @@ import { GetAllMovies, GetReleasesMovies, GetPopularMovies } from '../Service';
 
 function Provider({ children }) {
   const [releaseMovies, setReleaseMovies] = useState([]);
+  const [popularMovies, setPopularMovies] = useState([]);
   const [allMovies, setAllMovies] = useState([]);
+
   const fetchMovies = async () => {
     const responsePopularMovies = await GetPopularMovies();
-    console.log('popular', responsePopularMovies)
+    setPopularMovies(responsePopularMovies);
     const responseReleasesMovie = await GetReleasesMovies();
-    console.log('lançamentos:', responseReleasesMovie)
+    setReleaseMovies(responseReleasesMovie);
     const responseMovies = await GetAllMovies();
-    console.log('todos filmes', responseMovies)
     return setAllMovies(responseMovies);
   }
-  useEffect(() => {
-    fetchMovies();
-  }, [])
+
+  useEffect(() => fetchMovies(), []);
+
   const contextValue = {
     releaseMovies,
     setReleaseMovies,
     allMovies,
-    setAllMovies
+    setAllMovies,
+    popularMovies,
+    setPopularMovies
   };
   return (
     <AppContext.Provider value={ contextValue }>

@@ -6,36 +6,24 @@ const releasesMoviesURL = `${url}/movie/upcoming`;
 const moviesUrl = `${url}/discover/movie`;
 const popularMoviesUrl = `${url}/movie/popular`;
 
+const params= {
+  api_key: apiKey,
+  language: 'en-US',
+  page: 1
+};
+
 export const GetReleasesMovies = async () => {
-  const { data } = await axios.get(releasesMoviesURL, {
-    params: {
-      api_key: apiKey,
-      language: 'en-US',
-      page: 1
-    }
-  });
+  const { data } = await axios.get(releasesMoviesURL, { params });
   return data.results
 };
 
 export const GetAllMovies = async () => {
-  const { data } = await axios.get(moviesUrl, {
-    params: {
-      api_key: apiKey,
-      language: 'en-US',
-      page: 2
-    }
-  });
+  const { data } = await axios.get(moviesUrl, { params });
   return data.results
 };
 
 export const GetPopularMovies = async () => {
-  const { data } = await axios.get(popularMoviesUrl, {
-    params: {
-      api_key: apiKey,
-      language: 'en-US',
-      page: 1
-    }
-  });
+  const { data } = await axios.get(popularMoviesUrl, { params });
   return data.results
 };
 

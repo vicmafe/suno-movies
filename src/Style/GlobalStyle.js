@@ -7,8 +7,8 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   body {
-    width: 100vh;
-    height: 100vh;
+    width: 100%;
+    heigth: 100vh
   }
 `;
 

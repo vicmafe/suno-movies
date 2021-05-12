@@ -21,7 +21,7 @@ const Card = ({ movie }) => {
       </S.Rate>
       {
         carousel ? <></> : <S.Overview>{ overview }</S.Overview>
-      };
+      }
     </>
   );
 };

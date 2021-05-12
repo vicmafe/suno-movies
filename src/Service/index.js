@@ -5,6 +5,7 @@ const urlRoot = 'https://api.themoviedb.org/3';
 const releasesMoviesURL = `${urlRoot}/movie/upcoming`;
 const moviesUrl = `${urlRoot}/discover/movie`;
 const popularMoviesUrl = `${urlRoot}/movie/popular`;
+const genderIdUrl = `${urlRoot}/genre/movie/list`;
 
 const params = {
   api_key: apiKey,
@@ -24,6 +25,11 @@ export const GetAllMovies = async () => {
 
 export const GetPopularMovies = async () => {
   const { data } = await axios.get(popularMoviesUrl, { params });
+  return data.results;
+};
+
+export const GetGenderId = async () => {
+  const { data } = await axios.get(genderIdUrl, { params });
   return data.results;
 };
 

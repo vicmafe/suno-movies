@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Image = styled.img`
+export const Poster = styled.img`
   margin: 3px;
   border-radius: 3px;
   display: flex;
@@ -9,6 +9,7 @@ export const Image = styled.img`
 export const Title = styled.h5`
   display: flex;
   margin: 1px;
+  font-size: 12px;
   color: #fff;
 `;
 export const Genre = styled.p`
@@ -33,4 +34,10 @@ export const Star = styled.img`
   display: flex;
   width: 5px;
   filter: "invert(37%) sepia(97%) saturate(2412%) hue-rotate(312deg) brightness(99%) contrast(105%)";
+`;
+export const AverageRating = styled.p`
+display: flex;
+font-size: 10px;
+margin: 1px;
+color: #ff388c;
 `;

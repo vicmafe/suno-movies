@@ -22,13 +22,13 @@ const CarouselMovies = () => {
       carousel: true
     }
   });
-  console.log('quandidade de filmes no array:', moviesCarousel.length);
-  console.log('array filmes:', moviesCarousel);
-
   return (
     <S.Container>
       <S.ContainerCarousel>
-        <S.Title><S.Dot></S.Dot><b>LANÇAMENTOS</b> DA SEMANA</S.Title>
+        <S.Title>
+          <S.Dot />
+          <b>LANÇAMENTOS</b> DA SEMANA
+        </S.Title>
         <Carousel breakPoints={breakPoints}>
           {moviesCarousel.length >=1 && moviesCarousel.slice(11, 20)
             .map((element, index) =>

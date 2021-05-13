@@ -5,7 +5,8 @@ export const Container = styled.div`
   width: 100%;
   background-color: #212125;
   justify-content: center;
-  border-bottom: 5px solid #ff388c;
+  border-bottom: 3px solid #ff388c;
+  margin-top: 5%;
 `;
 export const Card = styled.div`
   display: flex;
@@ -16,14 +17,14 @@ export const Card = styled.div`
 export const Title = styled.p`
   display: flex;
   color: white;
-  margin-bottom: 15px;
+  margin-bottom: 3%;
   font-size: 18px;
   font-family: "Helvetica";
   flex-direction: row;
   align-items: center;
 `;
 export const ContainerCarousel = styled.div`
-  margin: 2%;
+  margin-bottom: 5%;
   display: flex;
   width: 70%;
   flex-direction: column;

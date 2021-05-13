@@ -1,11 +1,12 @@
 import React from 'react';
 import Navbar from '../../Components/Navbar';
+import CarouselMovies from '../../Components/Carousel';
 
 const Home = () => {
-  console.log('passou aqui')
   return (
     <>
       <Navbar />
+      <CarouselMovies />
     </>
   )
 };

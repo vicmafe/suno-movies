@@ -30,6 +30,6 @@ export const GetPopularMovies = async () => {
 
 export const GetGenderId = async () => {
   const { data } = await axios.get(genderIdUrl, { params });
-  return data.results;
+  return data.genres;
 };
 

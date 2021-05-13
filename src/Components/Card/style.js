@@ -12,8 +12,8 @@ export const Poster = styled.img`
 `;
 export const Title = styled.h3`
   display: flex;
-  margin: 1px;
-  font-size: 10px;
+  margin-top: 15px;
+  font-size: 18px;
   color: #fff;
   font-family: Helvetica;
 `;
@@ -39,12 +39,11 @@ export const Overview = styled.p`
 export const Star = styled.img`
   margin-right: 2px;
   display: flex;
-  width: 12px;
-  color: #ff388c;
+  width: 15px;
 `;
 export const AverageRating = styled.p`
 display: flex;
-font-size: 8px;
+font-size: 16px;
 margin: 2px;
 color: #ff388c;
 `;

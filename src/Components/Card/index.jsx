@@ -5,7 +5,7 @@ import * as S from './style';
 const Card = ({ movie }) => {
   const { title, rating, poster, genders, overview, carousel } = movie;
   return (
-    <>
+    <S.Container>
       <S.Poster
         src={ poster }
         alt="imagem poster filme"
@@ -22,7 +22,7 @@ const Card = ({ movie }) => {
       {
         carousel ? <></> : <S.Overview>{ overview }</S.Overview>
       }
-    </>
+    </S.Container>
   );
 };
 

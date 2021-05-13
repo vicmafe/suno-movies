@@ -1,27 +1,34 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+  position: relative;
+`;
+
 export const Poster = styled.img`
   margin: 3px;
   border-radius: 3px;
   display: flex;
-  width: 20%;
+  width: 100%;
 `;
-export const Title = styled.h5`
+export const Title = styled.h3`
   display: flex;
   margin: 1px;
-  font-size: 12px;
+  font-size: 10px;
   color: #fff;
+  font-family: Helvetica;
 `;
 export const Genre = styled.p`
   display: flex;  
   font-size: 8px;
-  margin: 1px;
+  margin-top: 3px;
   color: #ff388c;
 `;
 export const Rate = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
+  margin-top: 3px;
+  align-items: center;
 `;
 export const Overview = styled.p`
   display: flex;
@@ -30,14 +37,14 @@ export const Overview = styled.p`
   color: #ffff;
 `;
 export const Star = styled.img`
-  margin: 1px;
+  margin-right: 2px;
   display: flex;
-  width: 5px;
-  filter: "invert(37%) sepia(97%) saturate(2412%) hue-rotate(312deg) brightness(99%) contrast(105%)";
+  width: 12px;
+  color: #ff388c;
 `;
 export const AverageRating = styled.p`
 display: flex;
-font-size: 10px;
-margin: 1px;
+font-size: 8px;
+margin: 2px;
 color: #ff388c;
 `;

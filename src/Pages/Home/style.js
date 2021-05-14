@@ -7,12 +7,12 @@ export const Container = styled.div`
   width: 100%;
 `;
 export const CentralBar = styled.div`
-  margin-left: 15%;
   height: 85px;
   display: flex;
   flex-direction: row;
   align-items: center;
   background-color: #212125;
+  border-bottom: 1px solid #151518
 `;
 export const Dot = styled.div`
   display: flex;
@@ -26,5 +26,13 @@ export const Dot = styled.div`
 export const TexTCentralBar = styled.span`
   color: #fff;
   font-size: 18px;
-  font-family: Helvetica
+  font-family: Helvetica;
+  margin-left: 15%;
+`;
+export const Catalog = styled.div`
+  width: 80%;
+  display: flex;
+  align-items: center;
+`;
+export const Select = styled.select`
 `;

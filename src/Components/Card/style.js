@@ -5,8 +5,7 @@ export const Container = styled.div`
 `;
 
 export const Poster = styled.img`
-  margin: 3px;
-  border-radius: 3px;
+  border-radius: 5px;
   display: flex;
   width: 100%;
 `;
@@ -42,8 +41,8 @@ export const Star = styled.img`
   width: 15px;
 `;
 export const AverageRating = styled.p`
-display: flex;
-font-size: 16px;
-margin: 2px;
-color: #ff388c;
+  display: flex;
+  font-size: 16px;
+  margin: 2px;
+  color: #ff388c;
 `;

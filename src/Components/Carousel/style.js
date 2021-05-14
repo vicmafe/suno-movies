@@ -6,7 +6,7 @@ export const Container = styled.div`
   background-color: #212125;
   justify-content: center;
   border-bottom: 3px solid #ff388c;
-  margin-top: 5%;
+  margin-top: 3%;
 `;
 export const Card = styled.div`
   display: flex;
@@ -14,17 +14,17 @@ export const Card = styled.div`
   flex-direction: column;
   margin: 0px;
 `;
-export const Title = styled.p`
+export const Title = styled.div`
   display: flex;
   color: white;
   margin-bottom: 3%;
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Helvetica";
   flex-direction: row;
   align-items: center;
 `;
 export const ContainerCarousel = styled.div`
-  margin-bottom: 5%;
+  margin-bottom: 3%;
   display: flex;
   width: 70%;
   flex-direction: column;
@@ -53,8 +53,8 @@ export const ContainerCarousel = styled.div`
 `;
 export const Dot = styled.div`
   display: flex;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: #ff388c;
   margin-right: 10px;

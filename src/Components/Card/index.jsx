@@ -13,8 +13,6 @@ const Card = ({ movie }) => {
     return verifyId;
     }
   );
-
-  console.log(gendersName);
   return (
     <S.Container>
       <S.Poster

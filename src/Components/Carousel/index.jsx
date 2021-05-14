@@ -8,9 +8,9 @@ const CarouselMovies = () => {
   const { releaseMovies } = useContext(AppContext);
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
-    { width: 500, itemsToShow: 2 },
-    { width: 768, itemsToShow: 3 },
-    { width: 1200, itemsToShow: 4 }
+    { width: 500, itemsToShow: 3 },
+    { width: 768, itemsToShow: 5 },
+    { width: 1200, itemsToShow: 6 }
   ];
   const moviesCarousel = releaseMovies.map(movie => {
     return  {
@@ -27,7 +27,8 @@ const CarouselMovies = () => {
       <S.ContainerCarousel>
         <S.Title>
           <S.Dot />
-          <b>LANÇAMENTOS</b> DA SEMANA
+          <b>LANÇAMENTOS</b>&nbsp;
+          DA SEMANA
         </S.Title>
         <Carousel breakPoints={breakPoints}>
           {moviesCarousel.length >=1 && moviesCarousel.slice(11, 20)

@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../../Components/Navbar';
 import CarouselMovies from '../../Components/Carousel';
-import Catalog from '../../Components/Catalog';
+import CatalogMovies from '../../Components/Catalog';
 import * as S from './style';
 
 const Home = () => {
@@ -16,7 +16,7 @@ const Home = () => {
         </S.TexTCentralBar>
       </S.CentralBar>
       <S.Catalog>
-        <Catalog />
+        <CatalogMovies />
       </S.Catalog>
     </S.Container>
   )

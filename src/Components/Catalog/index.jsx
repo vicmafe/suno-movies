@@ -10,9 +10,11 @@ const CatalogMovies = () => {
   const [buttonFilter, setButtonFilter] = useState('todos filmes');
   const [toggleButtonMore, setToggleButtonMore] = useState(false);
   const [toggleMoreCatalog, setToggleMoreCatalog] = useState(false)
+  const [displayCatalog, setDisplayCatalog] = useState('grid')
 
   const handleChangeCatalog = (type) => {
     setToggleButtonMore(true);
+    document.getElementById('id-select').disabled = false;
     console.log('o que é type:', type);
     if (type === 'mais populares') {
       const popularMoviesPart = popularMovies.slice(4, 20);
@@ -64,13 +66,18 @@ const CatalogMovies = () => {
           </S.ButtonChoiceType>
         </S.SelectMovies>
         <S.InputSelect
-          onChange={() => console.log('mudou exibição do catálogo')}
+          id="id-select"
+          disabled
+          onClick={({target}) => setDisplayCatalog(target.value)}
         >
+          <option key="choicevieW" value="">exibir</option>
           <option key="choicevieW" value="grid">grid</option>
-          <option key="choicevieW" value="grid">em lista</option>
+          <option key="choicevieW" value="lista">em lista</option>
         </S.InputSelect>
       </S.ButtonsContainer>
-      <S.CardCatalog>
+      <S.CardCatalog
+        display={displayCatalog}
+      >
         {
           moviesCatalogMain.length >= 1 &&
           moviesCatalogMain.map((element, index) =>

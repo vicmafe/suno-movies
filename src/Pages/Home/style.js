@@ -6,7 +6,7 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: 95vh;
 `;
 export const CentralBar = styled.div`
   height: 80px;
@@ -43,14 +43,14 @@ export const Footer = styled.div`
   width: 100%;
   background-color: #19191C;
   color: #fff;
-  height: 50px;
-  align-self: flex-end;
+  height: 5vh;
+  position: fixed;
 `;
 export const FooterText = styled.p`
   display: flex;
   justify-content: center;
   font-size: 12px;
-  font-weight: 
+  font-weight: 300; 
   width: 100%;
   color: #fff;
 `;

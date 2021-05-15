@@ -6,6 +6,7 @@ export const ContainerCatalog = styled.div`
   background-color: #212125;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 40px;
 `;
 export const ButtonsContainer = styled.div`
   display: flex;
@@ -30,9 +31,10 @@ export const InputSelect = styled.select`
   border-radius: 5px;
   min-height: 20px;
   margin-left: 0px;
+  disabled: true;
 `;
 export const CardCatalog = styled.div`
-  display: grid;
+  display: ${(props) => props.display };
   grid-gap: 30px;
   grid-template-columns: repeat(auto-fit, 300px);
   justify-content: center;
@@ -72,5 +74,5 @@ export const BoxButtonMore = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 30px;
+  margin: 80px;
 `;

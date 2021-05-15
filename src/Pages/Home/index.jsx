@@ -18,6 +18,11 @@ const Home = () => {
       <S.Catalog>
         <CatalogMovies />
       </S.Catalog>
+      <S.Footer>
+        <S.FooterText>
+          © 2021 Suno Movies. All rights reserved.
+        </S.FooterText>
+      </S.Footer>
     </S.Container>
   )
 };

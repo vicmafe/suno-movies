@@ -6,6 +6,7 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   width: 100%;
+  height: 100vh;
 `;
 export const CentralBar = styled.div`
   height: 80px;
@@ -36,5 +37,20 @@ export const Catalog = styled.div`
   align-items: center;
   justify-content: center;
 `;
-export const Select = styled.select`
+export const Footer = styled.div`
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #19191C;
+  color: #fff;
+  height: 50px;
+  align-self: flex-end;
+`;
+export const FooterText = styled.p`
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 
+  width: 100%;
+  color: #fff;
 `;

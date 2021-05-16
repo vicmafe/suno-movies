@@ -11,7 +11,6 @@ export const Container = styled.div`
 export const Card = styled.div`
   display: flex;
   width: 70%;
-  flex-direction: column;
   margin: 0px;
 `;
 export const Title = styled.div`

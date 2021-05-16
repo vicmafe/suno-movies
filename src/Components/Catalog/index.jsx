@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import Card from '../Card';
+import CardCatalog from '../Card/CardCatalog';
 import AppContext from '../../Context/AppContext';
 import * as S from './style';
 
@@ -10,12 +10,11 @@ const CatalogMovies = () => {
   const [buttonFilter, setButtonFilter] = useState('todos filmes');
   const [toggleButtonMore, setToggleButtonMore] = useState(false);
   const [toggleMoreCatalog, setToggleMoreCatalog] = useState(false)
-  const [displayCatalog, setDisplayCatalog] = useState('grid')
+  const [displayCatalog, setDisplayCatalog] = useState()
 
   const handleChangeCatalog = (type) => {
     setToggleButtonMore(true);
     document.getElementById('id-select').disabled = false;
-    console.log('o que é type:', type);
     if (type === 'mais populares') {
       const popularMoviesPart = popularMovies.slice(4, 20);
       setTypeMovies(popularMoviesPart);
@@ -27,10 +26,12 @@ const CatalogMovies = () => {
     }
 
   };
+
   const moreLoadMovies = () => {
     setToggleMoreCatalog(true);
     return setToggleButtonMore(false)
   };
+
   const moviesCatalog = typeMovieCatalog.map(movie => {
     return {
       title: movie.original_title,
@@ -41,8 +42,10 @@ const CatalogMovies = () => {
       carousel: false
     }
   });
+
   const moviesCatalogMain = moviesCatalog.slice(0, 9)
   const moviesCatalogMore = moviesCatalog.slice(10, 19)
+
   return (
     <S.ContainerCatalog>
       <S.ButtonsContainer>
@@ -68,33 +71,29 @@ const CatalogMovies = () => {
         <S.InputSelect
           id="id-select"
           disabled
-          onClick={({target}) => setDisplayCatalog(target.value)}
+          onChange={({ target }) => setDisplayCatalog(target.value)}
         >
           <option key="choicevieW" value="">exibir</option>
           <option key="choicevieW" value="grid">grid</option>
           <option key="choicevieW" value="lista">em lista</option>
         </S.InputSelect>
       </S.ButtonsContainer>
-      <S.CardCatalog
-        display={displayCatalog}
+      <S.CardCatalogContainer
+        displayShow={displayCatalog}
       >
         {
           moviesCatalogMain.length >= 1 &&
           moviesCatalogMain.map((element, index) =>
-          (
-            <Card key={index} movie={element} />
-          )
+            <CardCatalog key={index} movie={element} />
           )
         }
         {
           !toggleMoreCatalog ? <></> :
             moviesCatalogMore.map((element, index) =>
-              <S.CardCatalog>
-                <Card key={index} movie={element} />
-              </S.CardCatalog>
+              <CardCatalog key={index} movie={element} />
             )
         }
-      </S.CardCatalog>
+      </S.CardCatalogContainer>
       {
         !toggleButtonMore ? <></> :
           <S.BoxButtonMore>

@@ -39,7 +39,6 @@ export const Star = styled.img`
   margin-right: 3px;
   display: flex;
   width: 20px;
-  filter: "invert(37%) sepia(97%) saturate(2412%) hue-rotate(312deg) brightness(99%) contrast(105%)";
 `;
 export const AverageRating = styled.p`
   display: flex;

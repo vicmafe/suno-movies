@@ -33,9 +33,9 @@ export const InputSelect = styled.select`
   margin-left: 0px;
   disabled: true;
 `;
-export const CardCatalog = styled.div`
-  display: ${(props) => props.display };
-  grid-gap: 30px;
+export const CardCatalogContainer = styled.div`
+  display: ${props => props.displayShow || "grid"};
+  grid-gap: 50px;
   grid-template-columns: repeat(auto-fit, 300px);
   justify-content: center;
   justify-itens: center;

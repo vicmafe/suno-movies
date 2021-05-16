@@ -12,7 +12,7 @@ const Home = () => {
         <CarouselMovies />
         <S.CentralBar>
           <S.TexTCentralBar>
-          <S.Dot />
+            <S.Dot />
             <b>CATÁLOGO</b> COMPLETO
           </S.TexTCentralBar>
         </S.CentralBar>
@@ -20,11 +20,11 @@ const Home = () => {
           <CatalogMovies />
         </S.Catalog>
       </S.Container>
-        <S.Footer>
-          <S.FooterText>
-            © 2021 Suno Movies. All rights reserved.
+      <S.Footer>
+        <S.FooterText>
+          © 2021 Suno Movies. All rights reserved.
           </S.FooterText>
-        </S.Footer>
+      </S.Footer>
     </>
   )
 };

@@ -5,15 +5,14 @@ export const Container = styled.div`
 `;
 
 export const Poster = styled.img`
-  margin: 3px;
-  border-radius: 3px;
+  border-radius: 5px;
   display: flex;
   width: 100%;
 `;
 export const Title = styled.h3`
   display: flex;
-  margin: 1px;
-  font-size: 10px;
+  margin-top: 15px;
+  font-size: clamp(0.5em, 0.2em + 1.2vw, 1em);
   color: #fff;
   font-family: Helvetica;
 `;
@@ -28,23 +27,23 @@ export const Rate = styled.div`
   flex-direction: row;
   width: 100%;
   margin-top: 3px;
-  align-items: center;
+  align-items: flex-end;
 `;
 export const Overview = styled.p`
   display: flex;
-  font-size: 8px;
-  margin: 1px;
+  font-size: 10px;
+  margin-top: 15px;
   color: #ffff;
 `;
 export const Star = styled.img`
-  margin-right: 2px;
+  margin-right: 3px;
   display: flex;
-  width: 12px;
-  color: #ff388c;
+  width: 20px;
+  filter: "invert(37%) sepia(97%) saturate(2412%) hue-rotate(312deg) brightness(99%) contrast(105%)";
 `;
 export const AverageRating = styled.p`
-display: flex;
-font-size: 8px;
-margin: 2px;
-color: #ff388c;
+  display: flex;
+  font-size: 16px;
+  margin: 2px;
+  color: #ff388c;
 `;

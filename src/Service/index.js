@@ -10,7 +10,7 @@ const genderIdUrl = `${urlRoot}/genre/movie/list`;
 const params = {
   api_key: apiKey,
   language: 'en-US',
-  page: 1
+  page: 2
 };
 
 export const GetReleasesMovies = async () => {
@@ -30,6 +30,6 @@ export const GetPopularMovies = async () => {
 
 export const GetGenderId = async () => {
   const { data } = await axios.get(genderIdUrl, { params });
-  return data.results;
+  return data.genres;
 };
 

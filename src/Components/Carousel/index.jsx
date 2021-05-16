@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import AppContext from '../../Context/AppContext';
-import Card from '../../Components/Card';
+import CardCarousel from '../../Components/Card/CardCarousel';
 import Carousel from 'react-elastic-carousel';
 import * as S from './style';
 
@@ -8,9 +8,9 @@ const CarouselMovies = () => {
   const { releaseMovies } = useContext(AppContext);
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
-    { width: 500, itemsToShow: 2 },
-    { width: 768, itemsToShow: 3 },
-    { width: 1200, itemsToShow: 4 }
+    { width: 500, itemsToShow: 3 },
+    { width: 768, itemsToShow: 5 },
+    { width: 1200, itemsToShow: 6 }
   ];
   const moviesCarousel = releaseMovies.map(movie => {
     return  {
@@ -22,19 +22,20 @@ const CarouselMovies = () => {
       carousel: true
     }
   });
-  console.log('quandidade de filmes no array:', moviesCarousel.length);
-  console.log('array filmes:', moviesCarousel);
-
   return (
     <S.Container>
       <S.ContainerCarousel>
-        <S.Title><S.Dot></S.Dot><b>LANÇAMENTOS</b> DA SEMANA</S.Title>
+        <S.Title>
+          <S.Dot />
+          <b>LANÇAMENTOS</b>&nbsp;
+          DA SEMANA
+        </S.Title>
         <Carousel breakPoints={breakPoints}>
           {moviesCarousel.length >=1 && moviesCarousel.slice(11, 20)
             .map((element, index) =>
               (
                 <S.Card key={index}>
-                  <Card movie={ element } />
+                  <CardCarousel movie={ element } />
                 </S.Card>
               )
             )

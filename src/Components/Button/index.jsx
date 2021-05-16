@@ -1,9 +1,9 @@
 import React from 'react';
 import SButton from './style';
 
-const Button = ({ disabled, onClick, children, color, txtColor }) => (
+const Button = ({ type, disabled, onClick, children, color, txtColor }) => (
   <SButton
-    type="button"
+    type={ type }
     disabled={ disabled }
     onClick={ onClick }
     style={ { backgroundColor: color, color: txtColor } }

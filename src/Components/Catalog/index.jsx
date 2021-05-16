@@ -19,11 +19,11 @@ const CatalogMovies = () => {
       const popularMoviesPart = popularMovies.slice(4, 20);
       setTypeMovies(popularMoviesPart);
       return setButtonFilter('todos filmes')
-    }
+    };
     if (type === 'todos filmes') {
       setTypeMovies(allMovies);
       return setButtonFilter('mais populares');
-    }
+    };
 
   };
 
@@ -39,12 +39,12 @@ const CatalogMovies = () => {
       poster: `https://image.tmdb.org/t/p/w500/${movie.poster_path}`,
       genders: movie.genre_ids,
       overview: movie.overview,
-      carousel: false
-    }
+      id: movie.id
+    };
   });
 
-  const moviesCatalogMain = moviesCatalog.slice(0, 9)
-  const moviesCatalogMore = moviesCatalog.slice(10, 19)
+  const moviesCatalogMain = moviesCatalog.slice(0, 9);
+  const moviesCatalogMore = moviesCatalog.slice(10, 19);
 
   return (
     <S.ContainerCatalog>
@@ -58,14 +58,14 @@ const CatalogMovies = () => {
               genderId.map((gender, index) => (
                 <option key={index} value={gender.name}>{gender.name}</option>
               ))
-            }
+            };
           </S.InputSelect>
           <S.ButtonChoiceType
             type="button"
             value={buttonFilter}
             onClick={() => handleChangeCatalog(buttonFilter)}
           >
-            {buttonFilter}
+            {buttonFilter};
           </S.ButtonChoiceType>
         </S.SelectMovies>
         <S.InputSelect
@@ -73,9 +73,9 @@ const CatalogMovies = () => {
           disabled
           onChange={({ target }) => setDisplayCatalog(target.value)}
         >
-          <option key="choicevieW" value="">exibir</option>
-          <option key="choicevieW" value="grid">grid</option>
-          <option key="choicevieW" value="lista">em lista</option>
+          <option value="">exibir</option>
+          <option value="grid">grid</option>
+          <option value="lista">em lista</option>
         </S.InputSelect>
       </S.ButtonsContainer>
       <S.CardCatalogContainer
@@ -86,13 +86,13 @@ const CatalogMovies = () => {
           moviesCatalogMain.map((element, index) =>
             <CardCatalog key={index} movie={element} />
           )
-        }
+        };
         {
           !toggleMoreCatalog ? <></> :
             moviesCatalogMore.map((element, index) =>
               <CardCatalog key={index} movie={element} />
             )
-        }
+        };
       </S.CardCatalogContainer>
       {
         !toggleButtonMore ? <></> :
@@ -104,7 +104,7 @@ const CatalogMovies = () => {
               carregar mais
           </S.ButtonCatalogMore>
           </S.BoxButtonMore>
-      }
+      };
     </S.ContainerCatalog>
   )
 };

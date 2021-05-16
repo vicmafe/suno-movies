@@ -13,13 +13,13 @@ const CarouselMovies = () => {
     { width: 1200, itemsToShow: 6 }
   ];
   const moviesCarousel = releaseMovies.map(movie => {
-    return  {
+    return {
       title: movie.original_title,
       rating: movie.vote_average,
       poster: `https://image.tmdb.org/t/p/w500/${movie.poster_path}`,
       genders: movie.genre_ids,
       overview: movie.overview,
-      carousel: true
+      id: movie.id
     }
   });
   return (
@@ -31,13 +31,13 @@ const CarouselMovies = () => {
           DA SEMANA
         </S.Title>
         <Carousel breakPoints={breakPoints}>
-          {moviesCarousel.length >=1 && moviesCarousel.slice(11, 20)
+          {moviesCarousel.length >= 1 && moviesCarousel.slice(11, 20)
             .map((element, index) =>
-              (
-                <S.Card key={index}>
-                  <CardCarousel movie={ element } />
-                </S.Card>
-              )
+            (
+              <S.Card key={index}>
+                <CardCarousel movie={element} />
+              </S.Card>
+            )
             )
           }
         </Carousel>

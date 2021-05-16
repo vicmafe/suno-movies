@@ -31,12 +31,6 @@ export const TexTCentralBar = styled.span`
   font-family: Helvetica;
   margin-left: 15%;
 `;
-export const Catalog = styled.div`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
 export const Footer = styled.div`
   display: flex;
   align-items: center;

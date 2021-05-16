@@ -1,17 +1,20 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  display: flex;
+  width: 100%;
+  flex-flow: row;
   position: relative;
+  margin: 3%;
 `;
-
 export const Poster = styled.img`
   border-radius: 5px;
   display: flex;
-  width: 100%;
+  width: 30%;
 `;
 export const Title = styled.h3`
   display: flex;
-  margin-top: 15px;
+  margin-left: 15px;
   font-size: clamp(0.5em, 0.2em + 1.2vw, 1em);
   color: #fff;
   font-family: Helvetica;
@@ -27,13 +30,19 @@ export const Rate = styled.div`
   flex-direction: row;
   width: 100%;
   margin-top: 3px;
+  margin-left: 15px;
   align-items: flex-end;
 `;
 export const Overview = styled.p`
   display: flex;
-  font-size: 10px;
+  flex-flow: row wrap;
+  text-align: left;
+  font-size: clamp(0.5em, 0.3em + 1vw, 1em);
   margin-top: 15px;
-  color: #ffff;
+  color: #B7B7B7;
+  margin-left: 15px;
+  margin-top: 15%;
+  line-height: 1.5;
 `;
 export const Star = styled.img`
   margin-right: 3px;
@@ -45,4 +54,9 @@ export const AverageRating = styled.p`
   font-size: 16px;
   margin: 2px;
   color: #ff388c;
+`;
+export const ContainerInformation = styled.div`
+  display: flex;
+  width: 70%;
+  flex-direction: column;
 `;

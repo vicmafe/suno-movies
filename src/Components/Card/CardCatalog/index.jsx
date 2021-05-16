@@ -19,22 +19,24 @@ const CardCatalog = ({ movie }) => {
         src={poster}
         alt="imagem poster filme"
       />
-      <S.Title>{title}</S.Title>
-      {
-        gendersName.length >= 1 && gendersName.map((element, index) => (
-          <S.Genre key={index}>
-            { element.name}
-          </S.Genre>
-        ))
-      }
-      <S.Rate>
-        <S.Star
-          src={iconStar}
-          alt="Icone estrela"
-        />
-        <S.AverageRating>{rating}</S.AverageRating>
-      </S.Rate>
-      <S.Overview>{overview}</S.Overview>
+      <S.ContainerInformation>
+        <S.Title>{title}</S.Title>
+        {
+          gendersName.length >= 1 && gendersName.map((element, index) => (
+            <S.Genre key={index}>
+              { element.name}
+            </S.Genre>
+          ))
+        }
+        <S.Rate>
+          <S.Star
+            src={iconStar}
+            alt="Icone estrela"
+          />
+          <S.AverageRating>{rating}</S.AverageRating>
+        </S.Rate>
+        <S.Overview>{overview}</S.Overview>
+      </S.ContainerInformation>
     </S.Container>
   );
 };

@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
-import iconStar from '../../Images/star.png';
-import AppContext from '../../Context/AppContext';
+import iconStar from '../../../Images/star.png';
+import AppContext from '../../../Context/AppContext';
 import * as S from './style';
 
-const Card = ({ movie }) => {
+const CardCarousel = ({ movie }) => {
   const { genderId } = useContext(AppContext);
   
   const { title, rating, poster, genders } = movie;
@@ -38,4 +38,4 @@ const Card = ({ movie }) => {
   );
 };
 
-export default Card;
+export default CardCarousel;

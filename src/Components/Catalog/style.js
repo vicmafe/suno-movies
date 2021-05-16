@@ -35,8 +35,8 @@ export const InputSelect = styled.select`
 `;
 export const CardCatalogContainer = styled.div`
   display: ${props => props.displayShow || "grid"};
-  grid-gap: 50px;
-  grid-template-columns: repeat(auto-fit, 300px);
+  grid-gap: 2px;
+  grid-template-columns: repeat(auto-fit, 600px);
   justify-content: center;
   justify-itens: center;
   padding: 10px;

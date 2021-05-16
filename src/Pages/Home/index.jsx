@@ -16,9 +16,7 @@ const Home = () => {
             <b>CATÁLOGO</b> COMPLETO
           </S.TexTCentralBar>
         </S.CentralBar>
-        <S.Catalog>
-          <CatalogMovies />
-        </S.Catalog>
+        <CatalogMovies />
       </S.Container>
       <S.Footer>
         <S.FooterText>

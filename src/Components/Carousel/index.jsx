@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import AppContext from '../../Context/AppContext';
-import Card from '../../Components/Card';
+import CardCarousel from '../../Components/Card/CardCarousel';
 import Carousel from 'react-elastic-carousel';
 import * as S from './style';
 
@@ -35,7 +35,7 @@ const CarouselMovies = () => {
             .map((element, index) =>
               (
                 <S.Card key={index}>
-                  <Card movie={ element } />
+                  <CardCarousel movie={ element } />
                 </S.Card>
               )
             )

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   width: 100%;
+  height: 100%;
   flex-flow: row;
   position: relative;
   margin: 3%;
@@ -37,11 +38,11 @@ export const Overview = styled.p`
   display: flex;
   flex-flow: row wrap;
   text-align: left;
-  font-size: clamp(0.5em, 0.3em + 1vw, 1em);
+  font-size: clamp(0.5em, 0.3em + 1vw, 0.8em);
   margin-top: 15px;
   color: #B7B7B7;
   margin-left: 15px;
-  margin-top: 15%;
+  margin-top: 5%;
   line-height: 1.5;
 `;
 export const Star = styled.img`

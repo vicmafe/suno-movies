@@ -12,9 +12,9 @@ export const ImagemSunoMovies = styled.img`
   display: flex;
   width: 60%;
   margin-left: 20%;
-  animation: kick 3s infinite alternate;
-  -webkit-animation: bounce 0.5s infinite alternate;
-  @keyframes kick {
+  animation: bounce 3s infinite alternate;
+  -webkit-animation: bounce 0.3s infinite alternate;
+  @keyframes bounce {
     from {
       transform: translateY(px);
     }

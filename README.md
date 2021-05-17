@@ -71,7 +71,7 @@
 <a href="https://www.linkedin.com/in/victor-mateus-ferreira/">
  <img style={border-radius: 50%} src="./Avatar.jpeg" width="200px;" alt=""/>
  <br>
- <sub><b>Vctor Mateus </b></sub>🚀</a><br>
+ <sub><b>Victor Mateus </b></sub>🚀</a><br>
 <br>
 
 <p>

@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Projeto Suno Movies
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Descrição do Projeto
 
-In the project directory, you can run:
+<p>A aplicação é o resultado proposto pelo autor para <a href="https://github.com/vicmafe/queue-manager/edit/main/README.md">este desafio tecnico</a>, onde o objetivo principal é desenvolver um portal de filmes.</p>
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Indice
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+ - <a href="##Requisitos Obrigatórios">Requisitos Obrigatórios</a><br>
+ - <a href="##Features obrigatórias do projeto">Features obrigatórias do projeto</a><br>
+ - <a href="##status do projeto">status do projeto</a><br>
+ - <a href="##Como rodar">Como rodar</a><br>
+ - <a href="##Demonstração da aplicação funcionando">Demonstração da aplicação funcionando</a><br>
+ - <a href="##Sobre o autor">Sobre o autor</a><br>
+ <br>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Requisitos Obrigatórios
 
-### `npm run build`
+  - [x] O projeto deverá ser em React;;
+  - [x] A aplicação deverá ser responsiva;
+  - [x] Funcionar na última versão dos principais browsers (Chrome, Firefox, Safari e Edge);
+  - [x] É proibido fazer uso de frameworks CSS (Bootstrap, Antd, Material, entre outros);
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Features obrigatórias do projeto:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  - [ ] A aplicação deverá conter uma busca por nome do filme;
+  - [x] Na Navbar da aplicação, o botão "Início" deverá redirecionar para a tela inicial e o botão "Catálogo" deverá ser um link para a seção "Catálogo Completo" (Scroll na página);
+  - [x] Deverá apresentar um Carousel com os filmes mais recentes na base de dados;
+  - [ ] A seção de "Catálogo" deverá conter opções de filtro por gênero e popularidade (avaliação do filme);
+  - [x] Também deverá ter a possibilidade de exibição dos cards por lista ou grid. Contendo uma paginação dinâmica;
+  - [x] Ao clicar em um filme, deverá carregar uma nova página contendo a descrição do filme selecionado;
+  <br>
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## status do projeto
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  <h4 align="center"> 
+    🚧  Em construção...  🚧
+  </h4>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Como rodar
 
-## Learn More
+<p>
+  Para interagir com a aplicação basta acessar <a href="https://suno-movies.herokuapp.com/catalog">aqui</a>
+</p>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<p>
+  Para rodar localmente, siga os passos:<br>
+  1 - Abra um terminal;<br>
+  2 - Clone este repositorio;<br>
+  3 - Instale as dependencias na pasta raiz do projeto digitando: npm install ou yarn install;<br>
+  4 - Assim que finalizar a instalação, rode a aplicação digitando: npm start ou yarn start;<br>
+  5 - Após alguns instantes uma aba do seu browser abrirá com a aplicação pronta para o uso;<br>
+</p>
+<br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Demonstração da aplicação funcionando
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  <img alt="gif app" title="#gifAppSuno" src="./app-suno-movies.gif" width="800px;" />
+  <br>
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Sobre o autor
 
-### Making a Progressive Web App
+<a href="https://www.linkedin.com/in/victor-mateus-ferreira/">
+ <img style={border-radius: 50%} src="./Avatar.jpeg" width="200px;" alt=""/>
+ <br>
+ <sub><b>Vctor Mateus </b></sub>🚀</a><br>
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p>
+Feito com ❤️ por Victor Mateus 👋🏽<br>
+Entre em contato!
+</p>

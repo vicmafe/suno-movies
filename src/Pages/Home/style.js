@@ -19,7 +19,7 @@ export const ImagemSunoMovies = styled.img`
       transform: translateY(px);
     }
     to {
-      transform: translateY(-15px);
+      transform: translateY(-25px);
     }
   }
 `;

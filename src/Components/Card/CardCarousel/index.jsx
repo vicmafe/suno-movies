@@ -19,6 +19,7 @@ const CardCarousel = ({ movie }) => {
       <Link
         to={`/details/${id}`}
         style={{ textDecoration: 'none' }}
+        idMovie={id}
       >
         <S.Poster
           src={ poster }

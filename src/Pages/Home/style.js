@@ -6,45 +6,29 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  height: 95vh;
+  height: 100vh;
 `;
-export const CentralBar = styled.div`
-  height: 80px;
+export const ImagemSunoMovies = styled.img`
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: #212125;
-  border-bottom: 1px solid #151518
+  width: 60%;
+  margin-left: 20%;
+  animation: kick 3s infinite alternate;
+  -webkit-animation: bounce 0.5s infinite alternate;
+  @keyframes kick {
+    from {
+      transform: translateY(px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
 `;
-export const Dot = styled.div`
+export const Title = styled.div`
   display: flex;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #ff388c;
-  margin-right: 10px;
-  display: inline-block;
-`;
-export const TexTCentralBar = styled.span`
-  color: #fff;
-  font-size: 16px;
-  font-family: Helvetica;
-  margin-left: 15%;
-`;
-export const Footer = styled.div`
-  display: flex;
-  align-items: center;
-  width: 100%;
-  background-color: #19191C;
-  color: #fff;
-  height: 5vh;
-  position: fixed;
-`;
-export const FooterText = styled.p`
-  display: flex;
-  justify-content: center;
-  font-size: 12px;
-  font-weight: 300; 
-  width: 100%;
-  color: #fff;
+  color: white;
+  margin-bottom: 3%;
+  margin-left: 35%;
+  padding-top: 100px;
+  font-size: 10vh;
+  font-family: "Helvetica";
 `;

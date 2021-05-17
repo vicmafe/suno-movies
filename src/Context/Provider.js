@@ -7,6 +7,7 @@ function Provider({ children }) {
   const [popularMovies, setPopularMovies] = useState([]);
   const [allMovies, setAllMovies] = useState([]);
   const [genderId, setGenderId] = useState([]);
+  const [showCatalog, setShowCatalog] = useState(false);
 
   const fetchMovies = async () => {
     const responsePopularMovies = await GetPopularMovies();
@@ -28,7 +29,9 @@ function Provider({ children }) {
     setAllMovies,
     popularMovies,
     setPopularMovies,
-    genderId
+    genderId,
+    showCatalog,
+    setShowCatalog
   };
   return (
     <AppContext.Provider value={ contextValue }>

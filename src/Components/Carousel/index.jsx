@@ -31,7 +31,7 @@ const CarouselMovies = () => {
           DA SEMANA
         </S.Title>
         <Carousel breakPoints={breakPoints}>
-          {moviesCarousel.length >= 1 && moviesCarousel.slice(11, 20)
+          {moviesCarousel.length < 1 ? <S.Title>Loading..</S.Title> : moviesCarousel.slice(11, 20)
             .map((element, index) =>
             (
               <S.Card key={index}>

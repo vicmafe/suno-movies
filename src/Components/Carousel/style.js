@@ -39,14 +39,13 @@ export const ContainerCarousel = styled.div`
     border: 1px solid #fff
   }
   .rec.rec-dot{
-    box-shadow: 0 0 1px 1.5px #fff;
-    background-color: none;
+    visibility: hidden;
   }
   .rec.rec-dot:disabled{
-    background-color: #212125;
+    visibility: hidden;
   }
   .rec.rec-dot:focus, .rec.rec-dot:hover, .rec.rec-dot:active {
-    background-color: #ff388c;
+    visibility: hidden;
   }
  
 `;

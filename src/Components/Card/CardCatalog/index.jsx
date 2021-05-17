@@ -1,18 +1,10 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import iconStar from '../../../Images/star.png';
-import AppContext from '../../../Context/AppContext';
 import { Link } from 'react-router-dom';
 import * as S from './style';
 
 const CardCatalog = ({ movie }) => {
-  const { genderId } = useContext(AppContext);
-
-  const { title, rating, poster, genders, overview, id } = movie;
-
-  const gendersName = genders.map(code => {
-    const verifyId = genderId.filter(genre => genre.id === code)
-    return verifyId;
-  });
+  const { title, rating, poster, overview, id } = movie;
 
   return (
     <Link
@@ -26,13 +18,6 @@ const CardCatalog = ({ movie }) => {
         />
         <S.ContainerInformation>
           <S.Title>{title}</S.Title>
-          {
-            gendersName.length >= 1 && gendersName.map((element, index) => (
-              <S.Genre key={index}>
-                { element.name}
-              </S.Genre>
-            ))
-          }
           <S.Rate>
             <S.Star
               src={iconStar}

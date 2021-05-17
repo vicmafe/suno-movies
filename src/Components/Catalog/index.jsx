@@ -1,10 +1,10 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import CardCatalog from '../Card/CardCatalog';
 import AppContext from '../../Context/AppContext';
 import * as S from './style';
 
 const CatalogMovies = () => {
-  const { popularMovies, allMovies, genderId } = useContext(AppContext);
+  const { popularMovies, allMovies, genderId, showCatalog } = useContext(AppContext);
 
   const [typeMovieCatalog, setTypeMovies] = useState(allMovies);
   const [buttonFilter, setButtonFilter] = useState('todos filmes');
@@ -14,7 +14,6 @@ const CatalogMovies = () => {
 
   const handleChangeCatalog = (type) => {
     setToggleButtonMore(true);
-    document.getElementById('id-select').disabled = false;
     if (type === 'mais populares') {
       const popularMoviesPart = popularMovies.slice(4, 20);
       setTypeMovies(popularMoviesPart);
@@ -31,6 +30,8 @@ const CatalogMovies = () => {
     setToggleMoreCatalog(true);
     return setToggleButtonMore(false)
   };
+
+  useEffect(() => setToggleButtonMore(true), [showCatalog]);
 
   const moviesCatalog = typeMovieCatalog.map(movie => {
     return {
@@ -70,7 +71,6 @@ const CatalogMovies = () => {
         </S.SelectMovies>
         <S.InputSelect
           id="id-select"
-          disabled
           onChange={({ target }) => setDisplayCatalog(target.value)}
         >
           <option value="">exibir</option>

@@ -3,7 +3,7 @@
 
 ## Descrição do Projeto
 
-<p>A aplicação é o resultado proposto pelo autor para <a href="https://github.com/vicmafe/queue-manager/edit/main/README.md">este desafio tecnico</a>, onde o objetivo principal é desenvolver um portal de filmes.</p>
+<p>A aplicação é o resultado proposto pelo autor para <a href="https://gitlab.com/suno-public/suno-movies">este desafio tecnico</a>, onde o objetivo principal é desenvolver um portal de filmes.</p>
 
 
 ## Indice

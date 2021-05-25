@@ -3,7 +3,7 @@
 
 ## Descrição do Projeto
 
-<p>A aplicação é o resultado proposto pelo autor para <a href="https://gitlab.com/suno-public/suno-movies">este desafio tecnico</a>, onde o objetivo principal é desenvolver um portal de filmes.</p>
+<p>Desenvolvimento front end de um portal de filmes, consumindo api <a href="https://developers.themoviedb.org/4/getting-started/authorization">TMDb</a>.</p>
 
 
 ## Indice
@@ -19,7 +19,7 @@
 
 ## Requisitos Obrigatórios
 
-  - [x] O projeto deverá ser em React;;
+  - [x] O projeto deverá ser em React;
   - [x] A aplicação deverá ser responsiva;
   - [x] Funcionar na última versão dos principais browsers (Chrome, Firefox, Safari e Edge);
   - [x] É proibido fazer uso de frameworks CSS (Bootstrap, Antd, Material, entre outros);
@@ -68,13 +68,13 @@
 
 ## Sobre o autor
 
-<a href="https://www.linkedin.com/in/victor-mateus-ferreira/">
- <img style={border-radius: 50%} src="./Avatar.jpeg" width="200px;" alt=""/>
+<a href="https://www.linkedin.com/in/victor-mateus-ferreira/" align="center">
+ <img style={border-radius: 50%} src="./Avatar.jpeg" width="200px;" alt=""/ align="center">
  <br>
- <sub><b>Victor Mateus </b></sub>🚀</a><br>
+ <sub align="center"><b>Victor Mateus </b></sub>🚀</a><br>
 <br>
 
-<p>
+<p align="center">
 Feito com ❤️ por Victor Mateus 👋🏽<br>
 Entre em contato!
 </p>

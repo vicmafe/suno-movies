@@ -69,9 +69,9 @@
 ## Sobre o autor
 
 <a href="https://www.linkedin.com/in/victor-mateus-ferreira/" align="center">
- <img align="center" style={border-radius: 50%} src="./Avatar.jpeg" width="200px;" alt=""/>
+ <img style={border-radius: 50%, align="center"} src="./Avatar.jpeg" width="200px;" alt=""/>
  <br>
- <sub align="center"><b>Victor Mateus </b></sub>🚀</a><br>
+ <sub><b align="center">Victor Mateus </b></sub>🚀</a><br>
 <br>
 
 <p align="center">
